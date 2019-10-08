@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.searchStarship.SearchStarshipActivity">
+
+    <EditText
+        android:id="@+id/editTextNave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nome_da_nave"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pesquisar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextNave" />
+
+    <TextView
+        android:id="@+id/textViewLblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/nome_da_nave"/>
+
+    <TextView
+        android:id="@+id/textViewLblModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/textViewLblName"
+        app:layout_constraintTop_toBottomOf="@id/textViewLblName"
+        android:text="@string/modelo_da_nave"/>
+
+    <TextView
+        android:id="@+id/textViewLblClasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/textViewLblModelo"
+        app:layout_constraintTop_toBottomOf="@id/textViewLblModelo"
+        android:text="@string/classe_da_nave"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/textViewLblName"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewLblName"/>
+
+    <TextView
+        android:id="@+id/textViewModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/textViewLblModelo"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewLblModelo"/>
+
+    <TextView
+        android:id="@+id/textViewStarshipClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/textViewLblClasse"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewLblClasse"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

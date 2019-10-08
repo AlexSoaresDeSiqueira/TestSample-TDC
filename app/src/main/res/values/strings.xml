@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">test-sample-tdc</string>
+    <string name="nome_da_nave">Nome da nave</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="modelo_da_nave">Modelo da nave:</string>
+    <string name="classe_da_nave">Classe da nave:</string>
+</resources>
